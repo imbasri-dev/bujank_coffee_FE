@@ -15,70 +15,77 @@
             <img src="../assets/img/signup_login/img_signup.png" alt="img_signup" />
         </aside>
         <aside class="right">
+            <div class="navbar">
+                <span class="nav__logo"><img src="../assets/img/main/logo_coffee.png" alt="" srcset="">
+                    <p>Bujank Coffee</p>
+                </span>
+                <h1>Sign Up</h1>
+            </div>
             <form method="post" class="form_bar">
-                <div>
-                    <span><img src="../assets/img/main/logo_coffee.png" alt="" srcset="">
-                        <p>Coffee Shop</p>
-                    </span>
-                    <p>Sign Up</p>
+                <div class="inputbar">
+                    <div class="input">
+                        <label for="email">Email Address :</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email adress" required />
+                    </div>
+                    <div class="input">
+                        <label for="password">Password :</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password"
+                            required />
+                    </div>
+                    <div class="input">
+                        <label for="tel">Phone Number :</label>
+                        <input type="tel" name="tel" id="tel" placeholder="Enter your phone number" required />
+                    </div>
+                    <button class="btn sign" type="submit">Sign Up</button>
+                    <button class="btn google" type="submit">
+                        <span><img src="../assets/img/signup_login/icon_googlesignup.png" alt="" srcset="" /></span>
+                        Sign up with Google
+                    </button>
                 </div>
-                <div>
-                    <label for="email">Email Address :</label>
-                    <input type="email" name="email" id="email" />
-                </div>
-                <div>
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" id="password" />
-                </div>
-                <div>
-                    <label for="tel">Phone Number :</label>
-                    <input type="tel" name="tel" id="tel" />
-                </div>
-                <button type="submit">Sign Up</button>
-                <button type="submit">
-                    <span><img src="../assets/img/signup_login/icon_googlesignup.png" alt="" srcset="" /></span>
-                    Sign up with Google
-                </button>
-                <div>
+                <div class="ready">
                     <span></span>
                     <p>Already have an account?</p>
                     <span></span>
                 </div>
-                <a href="">Login Here</a>
+                <a class="btn login" href="">Login Here</a>
             </form>
             <footer>
                 <aside class="foot-left">
-                    <img src="../assets/img/" alt="">
-                    <div>
+                    <div class="foot-left-desc">
                         <span><img src="../assets/img/main/logo_coffee.png" alt="icon_coffee">
-                            <h4>Coffee Shop</h4>
+                            <h4>Bujank Coffee</h4>
                         </span>
                         <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high
                             quality
                             beans</p>
+                        <div class="foot-icon">
+                            <a href=#fabook"><img src="../assets/img/main/icon_fb.png" alt="" srcset=""></a>
+                            <a href="#twitter"><img src="../assets/img/main/icon_twitter.png" alt="" srcset=""></a>
+                            <a href="#instagram"><img src="../assets/img/main/icon_ig.png" alt="" srcset=""></a>
+                        </div>
                         <p>©2020CoffeeStore</p>
                     </div>
                 </aside>
                 <aside class="foot-right">
-                    <div>
+                    <div class="foot-right-desc">
                         <h4>Product</h4>
                         <ul>
-                            <li><a href="">Download</a></li>
-                            <li><a href="">Locations</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Countries</a></li>
-                            </ol>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Countries</a></li>
+                        </ul>
                     </div>
-                    <div>
+                    <div class="foot-right-desc">
                         <h4>Engage</h4>
                         <ul>
-                            <li><a href="">Coffe Shop ?</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                            <li><a href="">About Us</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            </ol>
+                            <li><a href="#">Coffe Shop ?</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
                     </div>
                 </aside>
             </footer>
