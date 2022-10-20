@@ -1,0 +1,100 @@
+/* import font
+font-family: 'Poppins',
+sans-serif;
+font-family: 'Rubik',
+sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* reset format css */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik',
+        sans-serif;
+}
+
+
+.container {
+    width: 100%;
+
+}
+
+/* navbar */
+nav {
+    padding: 75px 150px 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>span {
+    display: flex;
+    align-items: center;
+}
+
+nav>span>p {
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B132A;
+}
+
+nav .nav__link a {
+    text-decoration: none;
+    margin-right: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4F5665;
+}
+
+nav .nav__utility a {
+    text-decoration: none;
+    margin-right: 34px;
+}
+
+nav .nav__utility a img {
+    width: 30px;
+    height: 30px;
+}
+
+nav .nav__utility a .img_userprofile {
+    border-radius: 50%;
+    border: 3px solid #6A4029;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 20px rgba(106, 64, 41, 0.8));
+}
+
+/* content profile */
+
+.content__bar {
+    margin-top: 50px;
+    background-image: url('../img/main/img_bg_profiles.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1184px;
+    width: 100%;
+    opacity: 0.9;
+    padding: 0 150px;
+}
+
+section>h1 {
+    padding-top: 60px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-shadow: 0px 6px 8px rgba(255, 255, 255, 0.26);
+}
+
+.content__profile {
+    width: 100%;
+    padding: 120px;
+    background: #F8F8F8;
+    border-radius: 20px;
+}
