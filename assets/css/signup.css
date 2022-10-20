@@ -1,0 +1,26 @@
+/* reset format css */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+img>.left {
+    width: 988px;
+    object-fit: cover;
+}
+
+.form_bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 55px;
+}
