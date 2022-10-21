@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <header>
             <nav>
                 <span><img src="../assets/img/main/logo_coffee.png" alt="icon_coffee">
@@ -24,7 +24,10 @@
                 </div>
                 <div class="nav__utility">
                     <a href=""><img src="../assets/img/product/icon_search.png" alt="icon_search"></a>
-                    <a href=""><img src="../assets/img/product/icon_message.png" alt="icon_message"></a>
+                    <a href=""><img src="../assets/img/product/icon_message.png" alt="icon_message"><span
+                            id="message_number">
+                            <p>1</p>
+                        </span></a>
                     <a href=""><img class="img_userprofile" src="../assets/img/product/img_userprofile.png"
                             alt="img_profile"></a>
                 </div>
@@ -33,125 +36,133 @@
 
         <section class="content__bar">
             <h1>User Profile</h1>
-
             <div class="content__profile">
-                <div class="left__profile">
-                    <img src="../assets/img/main/img_zulaika.png" alt="img_userprofile">
-                    <h3>Zulaikha</h3>
-                    <p>zulaikha17@gmail.com</p>
-                    <div>
-                        <label for="files" id="lable_file">Choose photo</label>
-                        <input type="file" name="file" class="hidden" id="files">
-                    </div>
-                    <span><a href="#">Remove Photo</a></span>
-                    <span><a href="#">Edit Password</a></span>
-                    <h3>Do you want to save the change?</h3>
-                    <button type="submit">Save Change</button>
-                    <button type="reset">Cancel</button>
-                    <span><a href="#">Log out</a></span>
-                </div>
-                <div class="right__profile">
-                    <div class="profile__bar">
-                        <div class="contact">
-                            <h2>Contact</h2>
-                            <img src="../assets/img/product/icon_editpencil.png" alt="icon_change">
+                <div class="content__contact">
+                    <section class="user__profile">
+                        <div class="user__img">
+                            <img src="../assets/img/main/img_zulaika.png" alt="img_userprofile">
+                            <label for="files" id="lable_file">
+                                <img src="../assets/img/product/icon_editpencil.png" alt="icon_edit">
+                            </label>
+                            <input type="file" name="file" class="hidden" id="files">
                         </div>
-                        <div class="profile__input">
-                            <div>
-                                <div>
-                                    <label for="email">Email adress :</label>
-                                    <input type="email" name="email" id="email" value="zulaikha17@gmail.com">
-                                </div>
-                                <div>
-                                    <label for="deliv_address">Email adress :</label>
-                                    <input type="deliv_address" name="deliv_address" id="deliv_address"
-                                        value="Iskandar Street no. 67 Block A Near Bus Stop">
-                                </div>
+                        <h3>Zulaikha</h3>
+                        <p class="user__email">zulaikha17@gmail.com</p>
+                        <p id="order">Has been ordered 15 products</p>
+                    </section>
+                    <section class="user__contact">
+                        <div class="contact">
+                            <h2>Contacts</h2>
+                            <img src="../assets/img/product/icon_editpencil.png" alt="icon_edit">
+                        </div>
+                        <div class="input__contact">
+                            <div class="column">
+                                <label for="email">Email adress :</label>
+                                <input type="email" name="email" id="email" value="zulaikha17@gmail.com">
                             </div>
-                            <div>
+                            <div class="column">
                                 <label for="phones">Mobile number :</label>
                                 <input type="tel" name="phones" id="phones" value="(+62)813456782">
                             </div>
                         </div>
-                        <div class="profile__details">
-                            <div>
-                                <div>
+                        <div class="input__contact column">
+                            <label for="deliv_address">Delivery adress :</label>
+                            <input type="text" name="deliv_address" id="deliv_address"
+                                value="Iskandar Street no. 67 Block A Near Bus Stop">
+                        </div>
+                    </section>
+                </div>
+                <section class="user__detail_bar">
+                    <div class="user__detail">
+                        <div class="detail">
+                            <h2>Details</h2>
+                            <img src="../assets/img/product/icon_editpencil.png" alt="icon_change">
+                        </div>
+                        <div class="user__name">
+                            <div class="input__name">
+                                <div class="input__column">
                                     <label for="displayname">Display name :</label>
                                     <input type="text" name="displayname" id="displayname" value="Zulaikha">
                                 </div>
-                                <div>
+                                <div class="input__column">
                                     <label for="first">First name :</label>
                                     <input type="text" name="first" id="first" value="Zulaikha">
                                 </div>
-                                <div>
+                                <div class="input__column">
                                     <label for="last">Last name :</label>
                                     <input type="text" name="last" id="last" value="Nirmala">
                                 </div>
                             </div>
-                            <div>
-                                <label for="birthday">DD/MM/YY :</label>
-                                <input type="date" name="birthday" id="birthday"
-                                    value="Iskandar Street no. 67 Block A Near Bus Stop">
-                            </div>
-                            <div>
-                                <span>
+                            <div class="input__column">
+                                <label for="birthday">DD/MM/YYYY :</label>
+                                <input class="birthday" type="date" name="birthday" id="birthday" value="1990-03-04">
+                                <div class="input__radio">
                                     <input type="radio" name="gender" id="male">
                                     <label for="male">Male</label>
-                                </span>
-                                <span>
+                                </div>
+                                <div class="input__radio">
                                     <input type="radio" name="gender" id="female" checked>
                                     <label for="female">Female</label>
-                                </span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <aside class="foot-left">
-                <div class="foot-left-desc">
-                    <span><img src="../assets/img/main/logo_coffee.png" alt="icon_coffee">
-                        <h4>Bujank Coffee</h4>
-                    </span>
-                    <p>Coffee Shop is a store that sells some good meals, and especially coffee. We provide high
-                        quality
-                        beans</p>
-                    <div class="foot-icon">
-                        <a href=#facebook"><img src="../assets/img/main/icon_fb.png" alt="icon_facebook"></a>
-                        <a href="#twitter"><img src="../assets/img/main/icon_twitter.png" alt="icon_twitter"></a>
-                        <a href="#instagram"><img src="../assets/img/main/icon_ig.png" alt="icon_instagram"></a>
+                    <div class="user__utility">
+                        <h3>Do you want to save the change?</h3>
+                        <button class="btn_utility save" type="submit">Save Change</button>
+                        <button class="btn_utility cancel" type="reset">Cancel</button>
+                        <span class="btn_utility edit"><a href="#">Edit Password</a><img
+                                src="../assets/img/main/icon_arrow.png" alt="icon_arrow"></span>
+                        <span class="btn_utility logout"><a href="#">Log out</a><img
+                                src="../assets/img/main/icon_arrow.png" alt="icon_arrow"></span>
                     </div>
-                    <p>©2020CoffeeStore</p>
-                </div>
-            </aside>
-            <aside class="foot-right">
-                <div class="foot-right-desc">
-                    <h4>Product</h4>
-                    <ul>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Countries</a></li>
-                    </ul>
-                </div>
-                <div class="foot-right-desc">
-                    <h4>Engage</h4>
-                    <ul>
-                        <li><a href="#">Coffe Shop ?</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </aside>
-        </footer>
-    </div>
+            </div>
 
+        </section>
+    </main>
+    <footer>
+        <aside class="foot_left">
+            <div class="foot_left_desc">
+                <span>
+                    <img src="../assets/img/main/logo_coffee.png" alt="icon_coffee" style="margin-right: 15px;">
+                    <h4>Bujank Coffee</h4>
+                </span>
+                <p class="foot_about">Coffee Shop is a store that sells some good meals, and especially coffee. We
+                    provide high
+                    quality
+                    beans</p>
+                <div class="foot_left_icon">
+                    <a href="#facebook"><img src="../assets/img/main/icon_fb.png" alt="icon_facebook"></a>
+                    <a href="#twitter"><img src="../assets/img/main/icon_twitter.png" alt="icon_twitter"></a>
+                    <a href="#instagram"><img src="../assets/img/main/icon_ig.png" alt="icon_instagram"></a>
+                </div>
+                <p class="foot_created">©2020CoffeeStore</p>
+            </div>
+        </aside>
+        <aside class="foot_right">
+            <div class="foot_right_link product">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Countries</a></li>
+                </ul>
+            </div>
+            <div class="foot_right_link engange">
+                <h4>Engage</h4>
+                <ul>
+                    <li><a href="#">Coffe Shop ?</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </aside>
+    </footer>
+    </div>
 </body>
 
 </html>
