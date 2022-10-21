@@ -49,7 +49,6 @@ sans-serif; */
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
-
     color: #6A4029;
 }
 
@@ -63,7 +62,6 @@ sans-serif; */
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    /* identical to box height */
     color: #0B132A;
     margin-left: 15px;
 }
@@ -80,16 +78,6 @@ form {
     flex-direction: column;
     justify-content: center;
     width: 510px;
-}
-
-.forgot-password {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-decoration-line: underline;
-    margin-top: 20px;
-    color: #6A4029;
 }
 
 .input {
@@ -150,7 +138,6 @@ form {
     font-weight: 700;
     font-size: 17px;
     line-height: 26px;
-    /* identical to box height */
     color: #000000;
 }
 
@@ -199,10 +186,8 @@ form {
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
-    /* identical to box height, or 125% */
     color: #FFFFFF;
 }
-
 
 /* footer */
 
@@ -215,35 +200,33 @@ footer {
     margin-bottom: 25px;
 }
 
-
 .foot-right {
     width: 300px;
     margin-left: 25px;
 }
 
-.foot-left-desc>span {
+.foot_left_desc>span {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 22px;
 }
 
-.foot-left-desc span>h4 {
+.foot_left_desc span>h4 {
     margin-left: 15px;
     display: flex;
     justify-content: flex-start;
 }
 
-.foot-left-desc>p {
+.foot_left_desc>p {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
     width: 294px;
-    /* or 188% */
     color: #4F5665;
 }
 
-.foot-left-desc>p:last-child {
+.foot_left_desc>p:last-child {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -267,30 +250,27 @@ footer {
     width: 300px;
 }
 
-.foot-right h4 {
+.foot_right h4 {
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
-    /* identical to box height, or 167% */
     color: #0B132A;
     margin: 24px 0 20px 30px;
 }
 
-.foot-right-desc ul li {
+.foot_right_link ul li {
     list-style: none;
     margin: 0 25px 10px 25px;
     width: 100%;
 }
 
-.foot-right-desc {
+.foot_right_link {
     display: flex;
 }
 
-
-
-.foot-right-desc li a {
+.foot_right_link li a {
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
@@ -303,7 +283,7 @@ footer {
 /* animation */
 .btn:hover,
 .foot-icon img:hover,
-.foot-right-desc ul li a:hover {
+.foot_right_link ul li a:hover {
     transform: scale(1.1);
     transition: all 0.4s;
 }
