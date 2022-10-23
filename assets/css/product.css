@@ -1,0 +1,225 @@
+/* import font
+font-family: 'Poppins',
+sans-serif;
+font-family: 'Rubik',
+sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* reset format css */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik',
+        sans-serif;
+}
+
+/* variabel */
+:root {
+    --choco: #6A4029;
+    --abu: #4F5665;
+    --bluedark: #0B132A;
+    --banana: #FFBA33;
+    --abumuda: #DDDDDD;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+/* navbar */
+header {
+    border-bottom: 1px solid var(--abumuda);
+}
+
+nav .nav__link a {
+    text-decoration: none;
+    margin-right: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--abu);
+    transition: all 0.3s;
+}
+
+nav .nav__link a:hover {
+    color: var(--choco);
+    border-bottom: 1px solid var(--choco);
+    font-weight: 700;
+}
+
+#selected {
+    color: var(--choco);
+    font-weight: 700;
+}
+
+nav .nav__utility a {
+    margin-right: 34px;
+}
+
+nav .nav__utility a img {
+    width: 30px;
+    height: 30px;
+}
+
+nav .nav__utility a .img_userprofile {
+    border-radius: 50%;
+    border: 3px solid var(--choco);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 6px 20px var(--choco));
+}
+
+/* promo */
+.promo_left {
+    border-right: 1px solid var(--abumuda);
+}
+
+.promo_left>h2 {
+    color: var(--choco);
+}
+
+.promo_card {
+    border-bottom: 2px dashed black;
+    width: 100%;
+}
+
+.promo {
+    width: 100%;
+    height: 100%;
+    background-color: var(--banana);
+    border-radius: 20px;
+    margin-bottom: 45px;
+}
+
+.apply {
+    margin-top: 25px;
+    background-color: var(--choco);
+    border-radius: 20px;
+    padding: 5% 24%;
+}
+
+.category a {
+    color: var(--abu);
+}
+
+.category a:first-child {
+    color: var(--choco);
+    border-bottom: 2px solid var(--choco);
+    font-weight: 700;
+}
+
+.card__product img {
+    width: 75%;
+}
+
+.card__menu {
+    position: relative;
+    width: 156px;
+    height: auto;
+    z-index: 99;
+}
+
+.card__product {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 200px;
+    bottom: -130px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid var(--abumuda);
+}
+
+.title__product {
+    color: #000000;
+    font-family: 'Poppins';
+    padding: 0 25px;
+}
+
+.price {
+    color: var(--choco);
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #F8F8F8;
+    padding: 7% 5% 5% 10%;
+}
+
+.foot_left_desc span {
+    display: flex;
+    align-items: center;
+}
+
+.foot_left_desc .foot_about {
+    width: 340px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin-top: 25px;
+}
+
+.foot_created {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #AFB5C0;
+}
+
+.foot-left-desc span>h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0B132A;
+    margin-left: 15px;
+}
+
+.foot_left_icon {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+.footbar {
+    display: flex;
+}
+
+.foot_right {
+    display: flex;
+}
+
+.foot_right_link {
+    margin-right: 50px;
+}
+
+.foot_right_link h4 {
+    padding-left: 30px;
+}
+
+.foot_right .product {
+    margin-right: 100px;
+}
+
+.foot_right_link ul li {
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.foot_right_link ul li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+}
+
+/* animation */

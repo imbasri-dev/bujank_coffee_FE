@@ -31,6 +31,7 @@ sans-serif; */
     font-size: 16px;
     line-height: 19px;
     color: var(--abu);
+    border: 2px solid transparent;
 }
 
 .nav__link .active {
@@ -365,6 +366,13 @@ input.nosubmit {
     background: var(--jeruk);
     border-radius: 10px;
     padding: 2% 7%;
+    transition: all 0.3s;
+}
+
+/* hover */
+.hover:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
 }
 
 /* footer */
