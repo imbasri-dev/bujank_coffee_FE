@@ -23,6 +23,7 @@ sans-serif; */
     --abu: #4F5665;
     --bluedark: #0B132A;
     --jeruk: #FFBA33;
+    --abumuda: #DDDDDD;
 }
 
 .nav__link a {
@@ -167,6 +168,13 @@ input.nosubmit {
     color: var(--abu);
 }
 
+/* teamwork */
+.teamwork {
+    width: 100%;
+    margin-top: 15%;
+    margin-bottom: 80px;
+}
+
 .teamwork__left img {
     width: 100%;
     height: 100%;
@@ -184,14 +192,21 @@ input.nosubmit {
     margin-right: 10px;
 }
 
-.teamwork {
-    width: 100%;
-    margin-top: 15%;
-    margin-bottom: 80px;
+.teamwork__right h3 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--bluedark);
+}
+
+.teamwork__right>p {
+    font-size: 16px;
+    color: var(--abu);
 }
 
 .checklist li {
     list-style: none;
+    margin-bottom: 15px;
 }
 
 /* favorite */
@@ -215,6 +230,10 @@ input.nosubmit {
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     height: 768px;
+}
+
+.card__menus:last-child {
+    border: 2px solid var(--choco);
 }
 
 .card__menus>img {
@@ -303,13 +322,57 @@ input.nosubmit {
     object-fit: contain;
 }
 
+/* customer */
+
+.card_customer {
+    padding: 30px;
+    width: 30%;
+    height: 260px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid var(--abumuda);
+}
+
+.card_customer:first-child {
+    border: 2px solid var(--choco);
+}
+
+.card__bar {
+    margin-bottom: 80px;
+}
+
+.controller {
+    margin-bottom: 200px;
+}
+
+/* card promo */
+.card_promo {
+    width: 94%;
+    height: 230px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    left: 3%;
+    right: 3%;
+    border: 1px solid var(--abumuda);
+    bottom: -300px;
+}
+
+.btn__promo {
+    color: var(--choco);
+    font-family: 'Rubik';
+    font-size: 16px;
+    line-height: 25px;
+    background: var(--jeruk);
+    border-radius: 10px;
+    padding: 2% 7%;
+}
 
 /* footer */
 footer {
     display: flex;
     justify-content: space-between;
     background: #F8F8F8;
-    padding: 7% 5% 5% 10%;
+    padding: 15% 5% 5% 10%;
 }
 
 .foot_left_desc span {
@@ -385,5 +448,5 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    color: #4F5665;
+    color: var(--abu);
 }
