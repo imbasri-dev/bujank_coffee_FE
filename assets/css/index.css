@@ -88,12 +88,15 @@ main {
 }
 
 .jumbotron_left h1 {
-    margin: 78px 0 20px 0;
-    width: 570px;
+    margin: 80px 0 20px 0;
     height: 140px;
     font-weight: 700;
-    font-size: 50px;
     line-height: 70px;
+}
+
+.banner_location {
+    border-right: 1px solid var(--abumuda);
+    border-left: 1px solid var(--abumuda);
 }
 
 .jumbotron>p {
@@ -124,7 +127,7 @@ main {
 
 form.nosubmit {
     border: none;
-    margin: 20px 50px 0 150px;
+    margin: 20px 0 0 290px;
     padding: 0;
 }
 
@@ -146,8 +149,8 @@ input.nosubmit {
     border-radius: 10px;
     position: absolute;
     bottom: -100px;
-    left: 10%;
-    right: 10%;
+    left: 0%;
+    right: 0%;
     box-shadow: 6px 17px 19px -15px rgba(0, 0, 0, 0.46);
 }
 
@@ -179,6 +182,7 @@ input.nosubmit {
 .teamwork__left img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .teamwork__right ul li {
@@ -187,6 +191,7 @@ input.nosubmit {
     font-size: 14px;
     line-height: 30px;
     color: var(--abu);
+    text-align: left;
 }
 
 .teamwork__right ul li img {
@@ -195,7 +200,6 @@ input.nosubmit {
 
 .teamwork__right h3 {
     font-weight: 700;
-    font-size: 35px;
     line-height: 50px;
     color: var(--bluedark);
 }
@@ -231,6 +235,7 @@ input.nosubmit {
     border: 2px solid #DDDDDD;
     border-radius: 10px;
     height: 768px;
+    margin-bottom: 30px;
 }
 
 .card__menus:last-child {
@@ -244,9 +249,9 @@ input.nosubmit {
 }
 
 .menus ul {
+    width: 100%;
     text-align: left;
     list-style: none;
-    margin-top: 30px;
     height: 250px;
     display: flex;
     align-items: flex-start;
@@ -260,12 +265,12 @@ input.nosubmit {
     line-height: 30px;
     text-align: center;
     color: var(--bluedark);
-    margin-bottom: 40px;
-    margin-top: 25px;
+    margin-bottom: 60px;
+    margin-top: 35px;
 }
 
 .menus ul li {
-    padding: 0 10%;
+    padding: 0 auto;
     margin: 10px 0;
     font-size: 14px;
     color: var(--abu);
@@ -324,11 +329,10 @@ input.nosubmit {
 }
 
 /* customer */
-
 .card_customer {
-    padding: 30px;
-    width: 30%;
-    height: 260px;
+    padding: 20px;
+    height: auto;
+    width: 300px;
     background: #FFFFFF;
     border-radius: 10px;
     border: 2px solid var(--abumuda);
@@ -338,9 +342,6 @@ input.nosubmit {
     border: 2px solid var(--choco);
 }
 
-.card__bar {
-    margin-bottom: 80px;
-}
 
 .controller {
     margin-bottom: 200px;
@@ -348,12 +349,12 @@ input.nosubmit {
 
 /* card promo */
 .card_promo {
-    width: 94%;
+    width: 90%;
     height: 230px;
     background: #FFFFFF;
     border-radius: 10px;
-    left: 3%;
-    right: 3%;
+    left: 0;
+    right: 0;
     border: 1px solid var(--abumuda);
     bottom: -300px;
 }
@@ -457,4 +458,86 @@ footer {
     font-size: 16px;
     line-height: 30px;
     color: var(--abu);
+}
+
+@media only screen and (max-device-width: 768px) {
+    input.nosubmit {
+        margin-right: 250px;
+    }
+
+    .content__bar {
+        height: 100%;
+    }
+
+    .user__profile,
+    .user__contact,
+    .user__detail,
+    .user__utility {
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .input__column {
+        width: 100%;
+    }
+
+    #birthday {
+        width: 90%;
+    }
+
+    .content__bar>h1 {
+        text-align: center;
+        font-size: 3em;
+    }
+
+    .content__contact,
+    .user__detail_bar {
+        flex-direction: column;
+    }
+
+    .user__utility span a {
+        font-size: 1em;
+    }
+
+    .foot_right_link {
+        margin-right: 0;
+    }
+
+    .foot_right .product {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-device-width: 992px) {
+    footer {
+        flex-direction: column-reverse;
+        padding: 20px auto;
+    }
+
+    .foot_left_desc .foot_about {
+        width: auto;
+    }
+
+    .foot_left_desc {
+        padding-top: 5%;
+    }
+
+    .foot_right {
+        justify-content: space-around;
+        align-items: center;
+        padding: 2%;
+    }
+
+}
+
+@media only screen and (max-device-width: 1125px) {
+    input.nosubmit {
+        margin-left: 170px;
+    }
+
+    form.nosubmit {
+        margin-left: 50px;
+    }
 }
