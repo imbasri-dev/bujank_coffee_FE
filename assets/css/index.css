@@ -182,7 +182,7 @@ input.nosubmit {
 .teamwork__left img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .teamwork__right ul li {
@@ -236,6 +236,7 @@ input.nosubmit {
     border-radius: 10px;
     height: 768px;
     margin-bottom: 30px;
+
 }
 
 .card__menus:last-child {
@@ -248,7 +249,12 @@ input.nosubmit {
     margin-bottom: 70px;
 }
 
+.menus {
+    width: 100%;
+}
+
 .menus ul {
+    margin-left: -25px;
     width: 100%;
     text-align: left;
     list-style: none;
@@ -277,7 +283,7 @@ input.nosubmit {
 }
 
 .menus ul li img {
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 .menus .button_menus {
@@ -311,8 +317,8 @@ input.nosubmit {
 
 .map__content img {
     margin-top: 150px;
-    width: 70%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* partner */
@@ -345,6 +351,8 @@ input.nosubmit {
 
 .controller {
     margin-bottom: 200px;
+    margin-top: 25px;
+    width: 100%;
 }
 
 /* card promo */
@@ -508,6 +516,9 @@ footer {
         margin-right: 0;
     }
 
+    .paginasi img {
+        width: 25%;
+    }
 }
 
 @media only screen and (max-device-width: 992px) {
@@ -518,6 +529,10 @@ footer {
 
     .foot_left_desc .foot_about {
         width: auto;
+    }
+
+    .foot_right_link ul li {
+        margin-right: 0;
     }
 
     .foot_left_desc {
