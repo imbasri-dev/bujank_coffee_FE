@@ -5,8 +5,6 @@ font-family: 'Rubik',
 sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
 
-
-
 *,
 *:before,
 *:after {
@@ -66,7 +64,6 @@ sans-serif; */
     color: var(--choco);
 }
 
-
 main {
     width: auto;
     height: auto;
@@ -106,7 +103,6 @@ main {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-
 }
 
 .jumbotron_left .start {
@@ -236,7 +232,6 @@ input.nosubmit {
     border-radius: 10px;
     height: 768px;
     margin-bottom: 30px;
-
 }
 
 .card__menus:last-child {
