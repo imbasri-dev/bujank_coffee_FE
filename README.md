@@ -35,10 +35,37 @@
 <img src="./assets/img/readme/Product.png" width="50%" height="50%" /><img src="./assets/img/readme/Profile.png" width="50%" height="50%" />
 <p>Bujank Coffee is everyone can drinks</p>
 
-<h2 align="left">Built With </h2>
-<p align="left">
+## Home
+
+![Home](./assets//img/readme/Bujank-Coffee.png)
+
+## Sign Up
+
+![Sign Up](./assets//img/readme/./Sign-Up.png)
+
+## Login
+
+![Sign In](./assets//img/readme/./Login.png)
+
+## Product
+
+![Product](./assets//img/readme/Product.png)
+
+## Profile
+
+![Profile](./assets//img/readme/Profile.png)
+
+<h2 align="center">Built With </h2>
+
+<p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,figma&perline=2" />
+    <img src="https://skillicons.dev/icons?i=html,css,bootstrap" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=figma&theme=light" />
   </a>
 </p>
 
@@ -55,7 +82,9 @@
 1. Download this Project or you can type
    `https://github.com/imbasri-dev/bujank_coffee_FE/archive/refs/heads/master.zip`
 
-2.Extrack Zip and Open IDE or Click index.html 3. Bujank Coffee is Running
+<!--
+## Prerequisites
+-->
 
 ## Installation
 
