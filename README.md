@@ -31,19 +31,15 @@
 
 ![Profile](./assets//img/readme/Profile.png)
 
-<h2 align="center">Built With </h2>
+<h2 align="left">Built With</h2>
 
-<p align="center">
+<p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,bootstrap" />
+    <img src="https://skillicons.dev/icons?i=html,css,bootstrap,figna" />
   </a>
 </p>
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=figma&theme=light" />
-  </a>
-</p>
+
 
 ## Features
 
@@ -57,7 +53,8 @@
 
 1. Download this Project or you can type
    `https://github.com/imbasri-dev/bujank_coffee_FE/archive/refs/heads/master.zip`
-
+2. Open IDE or Click index.html
+3. Bujank Coffee is Running
 <!--
 ## Prerequisites
 -->
