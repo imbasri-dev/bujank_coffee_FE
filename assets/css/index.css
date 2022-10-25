@@ -348,11 +348,14 @@ input.nosubmit {
     border: 2px solid var(--choco);
 }
 
-
 .controller {
     margin-bottom: 200px;
     margin-top: 25px;
     width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* card promo */
